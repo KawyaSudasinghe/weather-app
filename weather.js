@@ -21,7 +21,7 @@ function getCity(){
 }
 
 function fetchweather(location){
-     fetch(`https://api.weatherapi.com/v1/current.json?key=d5ba376968b9447fa7c83730262705&q=${location}`)
+     fetch(`https://api.weatherapi.com/v1/current.json?key=API_KEY=${location}`)
     .then( response => response.json())
     .then( (data) => {
         console.log("API Response:", data);
